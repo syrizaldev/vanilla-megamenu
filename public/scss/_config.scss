@@ -1,0 +1,99 @@
+:root {
+	--color-white-100: hsl(206, 5%, 98%);
+	--color-white-200: hsl(206, 5%, 90%);
+	--color-white-300: hsl(206, 5%, 80%);
+	--color-white-400: hsl(206, 5%, 65%);
+	--color-white-500: hsl(206, 5%, 50%);
+
+	--color-black-100: hsl(213, 23%, 8%);
+	--color-black-200: hsl(214, 21%, 6%);
+	--color-black-300: hsl(210, 21%, 6%);
+	--color-black-400: hsl(216, 22%, 4%);
+	--color-black-500: hsl(220, 18%, 3%);
+
+	--color-pink-100: hsl(326, 85%, 90%);
+	--color-pink-200: hsl(327, 87%, 80%);
+	--color-pink-300: hsl(329, 86%, 70%);
+	--color-pink-400: hsl(330, 81%, 60%);
+	--color-pink-500: hsl(333, 71%, 50%);
+
+	--shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	list-style-type: none;
+	text-decoration: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+html {
+	font-size: 100%;
+	box-sizing: inherit;
+	scroll-behavior: smooth;
+	height: -webkit-fill-available;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	height: -webkit-fill-available;
+	color: var(--color-black-500);
+	background-color: var(--color-white-100);
+}
+
+main {
+	overflow: hidden;
+}
+
+a,
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+	user-select: none;
+	background: none;
+	box-shadow: none;
+}
+
+img,
+video {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+// Keyframes
+@keyframes slideLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slideRight {
+	0% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+	100% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+}

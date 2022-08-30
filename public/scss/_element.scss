@@ -1,0 +1,52 @@
+.section {
+	margin: 0 auto;
+	padding: 5rem 0 1rem;
+}
+
+.container {
+	max-width: 75rem;
+	height: auto;
+	margin: 0 auto;
+	padding: 0 1.25rem;
+}
+
+.brand {
+	font-family: inherit;
+	font-size: 1.625rem;
+	font-weight: 700;
+	line-height: 1.25;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	color: var(--color-pink-500);
+}
+
+.btn {
+	display: inline-block;
+	font-family: inherit;
+	font-size: 1rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	user-select: none;
+	outline: none;
+	border: none;
+	border-radius: 0.25rem;
+	text-transform: unset;
+	transition: all 0.3s ease-in-out;
+
+	&-darken {
+		padding: 0.75rem 2rem;
+		color: var(--color-white-100);
+		background-color: var(--color-black-200);
+		box-shadow: var(--shadow-medium);
+	}
+
+	&-neutral {
+		padding: 0.75rem 2rem;
+		color: var(--color-black-500);
+		background-color: var(--color-white-100);
+		box-shadow: var(--shadow-medium);
+	}
+}
