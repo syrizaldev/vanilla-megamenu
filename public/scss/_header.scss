@@ -7,8 +7,8 @@
 	height: auto;
 	z-index: 100;
 	margin: 0 auto;
-	box-shadow: var(--shadow-medium);
-	background-color: var(--color-white-100);
+	background-color: var(--white-100);
+	box-shadow: var(--shadow-md);
 }
 
 // Wrapper
@@ -19,7 +19,7 @@
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	height: 3.5rem;
+	height: 4rem;
 	margin: 0 auto;
 
 	&-left {
@@ -67,7 +67,7 @@
 		z-index: 100;
 		overflow: hidden;
 		transform: translate(-100%);
-		background-color: var(--color-white-100);
+		background-color: var(--white-100);
 		transition: all 0.45s ease-in-out;
 
 		&.active {
@@ -80,6 +80,7 @@
 .menu {
 	&-header {
 		display: none;
+		transition: all 0.3s ease;
 	}
 
 	&-item {
@@ -100,19 +101,19 @@
 		font-weight: 500;
 		line-height: inherit;
 		text-transform: capitalize;
-		color: var(--color-black-500);
+		color: var(--black-500);
 		transition: all 0.25s ease;
 
 		> i.bx {
 			font-size: 1.35rem;
 			margin-left: 0.25rem;
 			transform: rotate(90deg);
-			color: var(--color-black-500);
+			color: var(--black-500);
 		}
 
 		&:hover {
 			outline: none;
-			color: var(--color-pink-500);
+			color: var(--pink-500);
 		}
 	}
 
@@ -121,7 +122,7 @@
 		align-items: center;
 		justify-content: center;
 		margin-left: 0.75rem;
-		color: var(--color-black-500);
+		color: var(--black-500);
 		transition: all 0.25s ease;
 
 		> i.bx {
@@ -131,7 +132,7 @@
 
 		&:hover {
 			outline: none;
-			color: var(--color-pink-500);
+			color: var(--pink-500);
 		}
 	}
 
@@ -141,7 +142,7 @@
 			> .submenu {
 				opacity: 1;
 				visibility: visible;
-				margin-top: 0.5rem;
+				margin-top: 1rem;
 			}
 		}
 	}
@@ -154,27 +155,37 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
-			height: 3.5rem;
+			height: 4rem;
 			z-index: 110;
-			background-color: var(--color-white-100);
-			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			visibility: hidden;
+			background: transparent;
 
-			&.active > .menu-arrow {
-				display: block;
+			&.active {
+				visibility: visible;
+				background-color: var(--white-100);
+
+				> .menu-arrow {
+					display: block;
+				}
 			}
 		}
 
 		&-arrow {
 			display: none;
-			width: 3rem;
-			height: 3rem;
 			cursor: pointer;
+			width: 3rem;
+			height: 4rem;
 			text-align: center;
 
 			> i.bx {
 				font-size: 1.5rem;
-				line-height: 3rem;
-				color: var(--color-black-500);
+				line-height: 4rem;
+				color: var(--black-500);
+				transition: all 0.25s ease;
+
+				&:hover {
+					color: var(--pink-500);
+				}
 			}
 		}
 
@@ -184,11 +195,12 @@
 			font-weight: 500;
 			line-height: inherit;
 			text-transform: capitalize;
-			color: var(--color-black-500);
+			color: var(--black-500);
 		}
 
 		&-inner {
 			height: 100%;
+			margin-top: -3rem;
 			overflow-y: auto;
 			overflow-x: hidden;
 		}
@@ -224,9 +236,9 @@
 	opacity: 0;
 	visibility: hidden;
 	border-radius: 0 0 0.25rem 0.25rem;
-	border-top: 2px solid var(--color-pink-400);
-	box-shadow: var(--shadow-medium);
-	background-color: var(--color-white-100);
+	border-top: 2px solid var(--pink-400);
+	background-color: var(--white-100);
+	box-shadow: var(--shadow-md);
 	transition: all 0.35s ease-in-out;
 
 	&-inner {
@@ -240,7 +252,7 @@
 		font-weight: 500;
 		line-height: 1;
 		padding: 0.75rem 0;
-		color: var(--color-pink-500);
+		color: var(--pink-500);
 		text-transform: uppercase;
 		transition: all 0.3s ease;
 	}
@@ -259,12 +271,12 @@
 		line-height: inherit;
 		padding: 0.75rem 0;
 		text-transform: capitalize;
-		color: var(--color-black-500);
+		color: var(--black-500);
 		transition: all 0.25s ease-in-out;
 
 		&:hover {
 			outline: none;
-			color: var(--color-pink-500);
+			color: var(--pink-500);
 		}
 	}
 
@@ -382,7 +394,7 @@
 		opacity: 1;
 		border: none;
 		outline: none;
-		background-color: var(--color-black-500);
+		background-color: var(--black-500);
 
 		&:nth-child(1) {
 			top: 0px;
@@ -414,7 +426,7 @@
 	z-index: 9;
 	opacity: 0;
 	visibility: hidden;
-	background-color: rgba(0, 0, 0, 0.65);
+	background-color: rgba(0, 0, 0, 0.7);
 	transition: all 0.4s ease-in-out;
 
 	// Responsive Media Query

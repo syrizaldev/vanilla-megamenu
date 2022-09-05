@@ -1,3 +1,27 @@
+// Keyframes
+@keyframes slideLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes slideRight {
+	0% {
+		opacity: 1;
+		transform: translateX(0%);
+	}
+	100% {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+}
+
+// Elements
 .section {
 	margin: 0 auto;
 	padding: 5rem 0 1rem;
@@ -17,7 +41,7 @@
 	line-height: 1.25;
 	letter-spacing: -1px;
 	text-transform: uppercase;
-	color: var(--color-pink-500);
+	color: var(--pink-500);
 }
 
 .btn {
@@ -30,23 +54,28 @@
 	vertical-align: middle;
 	white-space: nowrap;
 	user-select: none;
-	outline: none;
-	border: none;
 	border-radius: 0.25rem;
-	text-transform: unset;
+	text-transform: capitalize;
 	transition: all 0.3s ease-in-out;
+
+	&-primary {
+		padding: 0.75rem 2rem;
+		color: var(--white-100);
+		background-color: var(--pink-500);
+		box-shadow: var(--shadow-md);
+	}
 
 	&-darken {
 		padding: 0.75rem 2rem;
-		color: var(--color-white-100);
-		background-color: var(--color-black-200);
-		box-shadow: var(--shadow-medium);
+		color: var(--white-100);
+		background-color: var(--black-200);
+		box-shadow: var(--shadow-md);
 	}
 
 	&-neutral {
 		padding: 0.75rem 2rem;
-		color: var(--color-black-500);
-		background-color: var(--color-white-100);
-		box-shadow: var(--shadow-medium);
+		color: var(--black-500);
+		background-color: var(--white-100);
+		box-shadow: var(--shadow-md);
 	}
 }
