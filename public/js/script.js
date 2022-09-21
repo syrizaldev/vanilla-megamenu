@@ -1,8 +1,8 @@
 const menuNavbar = document.querySelector('.navbar');
-const menuInner = menuNavbar.querySelector('.menu-inner');
-const menuArrow = menuNavbar.querySelector('.menu-arrow');
 const menuBurger = document.querySelector('.burger');
 const overlayBg = document.querySelector('.overlay');
+const menuInner = menuNavbar.querySelector('.menu-inner');
+const menuArrow = menuNavbar.querySelector('.menu-arrow');
 
 // Navbar Menu Toggle Function
 const toggleMenu = () => {
@@ -42,7 +42,7 @@ const toggleSubMenu = (e) => {
 	}
 };
 
-// Load Image use Intersection Observer
+// Load Images use Intersection Observer
 if ('IntersectionObserver' in window) {
 	const intersection = new IntersectionObserver((entries, observer) => {
 		entries.forEach((entry) => {

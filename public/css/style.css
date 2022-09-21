@@ -47,7 +47,6 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  height: -webkit-fill-available;
   color: var(--black-500);
   background-color: var(--white-100);
 }
@@ -66,8 +65,6 @@ button {
   border: none;
   outline: none;
   background: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 img,
@@ -172,6 +169,7 @@ img {
   border-radius: 0.25rem;
   text-transform: capitalize;
   -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .btn-primary {
@@ -285,13 +283,16 @@ img {
     z-index: 100;
     overflow: hidden;
     -webkit-transform: translate(-100%);
+        -ms-transform: translate(-100%);
             transform: translate(-100%);
     background-color: var(--white-100);
     -webkit-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
     transition: all 0.45s ease-in-out;
   }
   .navbar.active {
     -webkit-transform: translate(0%);
+        -ms-transform: translate(0%);
             transform: translate(0%);
   }
 }
@@ -299,6 +300,7 @@ img {
 .menu-header {
   display: none;
   -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .menu-item {
@@ -329,12 +331,14 @@ img {
   text-transform: capitalize;
   color: var(--black-500);
   -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 .menu-link > i.bx {
   font-size: 1.35rem;
   margin-left: 0.25rem;
   -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
           transform: rotate(90deg);
   color: var(--black-500);
 }
@@ -355,6 +359,7 @@ img {
   margin-left: 0.75rem;
   color: var(--black-500);
   -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
 .menu-icon > i.bx {
@@ -409,6 +414,7 @@ img {
     line-height: 4rem;
     color: var(--black-500);
     -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
   }
   .menu-arrow > i.bx:hover {
@@ -444,6 +450,7 @@ img {
   .menu-link > i.bx {
     margin-left: 0.5rem;
     -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
             transform: rotate(0deg);
   }
 }
@@ -463,6 +470,7 @@ img {
   -webkit-box-shadow: var(--shadow-md);
           box-shadow: var(--shadow-md);
   -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
 }
 .submenu-inner {
@@ -480,6 +488,7 @@ img {
   color: var(--pink-500);
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .submenu-item {
@@ -497,6 +506,7 @@ img {
   text-transform: capitalize;
   color: var(--black-500);
   -webkit-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
 .submenu-link:hover {
@@ -530,6 +540,7 @@ img {
     -webkit-box-shadow: none;
             box-shadow: none;
     -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
             transform: translateX(0%);
   }
   .submenu.active {
@@ -558,6 +569,7 @@ img {
   height: auto;
   margin: 0 auto;
   -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
 }
 .megamenu-column-1 {
@@ -592,6 +604,7 @@ img {
     overflow-y: auto;
     visibility: visible;
     -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
             transform: translateX(0%);
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -652,6 +665,7 @@ img {
   visibility: hidden;
   background-color: rgba(0, 0, 0, 0.7);
   -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 @media only screen and (max-width: 992px) {
