@@ -1,6 +1,4 @@
-# Responsive Navbar Megamenu
+# Responsive Megamenu
 
-![Megamenu]()
-
-* Responsive Navbar Megamenu using HTML5, CSS3 (including SCSS), and Vanilla JavaScript.
-* Compatible with all devices screen and supported cross-browser compatibility.
+* Responsive Megamenu using HTML5, CSS3 (including SCSS), and Vanilla JavaScript.
+* Compatible with all devices screen and cross-browser supported.
