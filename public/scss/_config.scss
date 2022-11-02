@@ -11,15 +11,20 @@
 	--black-400: hsl(216, 22%, 4%);
 	--black-500: hsl(220, 18%, 2%);
 
+	--night-100: hsl(217, 27%, 18%);
+	--night-200: hsl(217, 27%, 15%);
+	--night-300: hsl(217, 27%, 13%);
+	--night-400: hsl(215, 27%, 9%);
+
 	--pink-100: hsl(326, 85%, 90%);
 	--pink-200: hsl(327, 87%, 80%);
 	--pink-300: hsl(329, 86%, 70%);
 	--pink-400: hsl(330, 81%, 60%);
 	--pink-500: hsl(333, 71%, 50%);
 
-	--shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-	--shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-	--shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--shadow-small: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--shadow-medium: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-large: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 *,
@@ -50,6 +55,11 @@ body {
 	line-height: 1.5;
 	color: var(--black-500);
 	background-color: var(--white-100);
+
+	&.darkmode {
+		color: var(--white-100);
+		background-color: var(--night-400);
+	}
 }
 
 main {
