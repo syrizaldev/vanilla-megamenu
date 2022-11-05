@@ -210,9 +210,9 @@ img {
 
 .brand {
   font-family: inherit;
-  font-size: 1.625rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  line-height: 1.25;
+  line-height: 1.5;
   letter-spacing: -1px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
@@ -494,7 +494,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 5px;
+  margin-top: 6px;
   font-size: 1.45rem;
   color: var(--black-500);
   -webkit-transition: all 0.25s ease;
@@ -615,7 +615,7 @@ img {
 }
 .darkmode .submenu {
   border-top: 2px solid var(--pink-500);
-  background-color: var(--night-100);
+  background-color: var(--night-300);
 }
 .submenu-inner {
   -webkit-box-flex: 0;
